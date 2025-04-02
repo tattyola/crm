@@ -5,4 +5,4 @@
 ### react-bootstrap
 
 
-![pic](https://raw.githubusercontent.com/tattyola/crm/main/public/images/pic.png)
+![pic](https://raw.githubusercontent.com/tattyola/crm/public/images/pic.png)
