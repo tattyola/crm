@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {FaEdit, FaTrash} from "react-icons/fa";
+import UpdateOrder from "./UpdateOrder";
 
 const OrderCard = ({key, order, index, onDelete}) => {
+    const [showModal, setShowModal] = useState(false);
+
     return (
         <>
 
@@ -14,10 +17,11 @@ const OrderCard = ({key, order, index, onDelete}) => {
                 <td>{order.debt}</td>
                 <td>{order.createdAt}</td>
                 <td>{order.status}</td>
-                <td>{order.dates}</td>
+                <td>{order.date}</td>
                 <td>
                     <FaEdit
                         style={{cursor: "pointer", color: "blue", marginRight: "10px"}}
+                        onClick={() => setShowModal(true)}
                     />
                     <FaTrash
                         style={{cursor: "pointer", color: "red"}}
@@ -25,6 +29,12 @@ const OrderCard = ({key, order, index, onDelete}) => {
                     />
                 </td>
             </tr>
+
+            <UpdateOrder
+                show={showModal}
+                handleClose={() => setShowModal(false)}
+                order={order}
+            />
         </>
     );
 };

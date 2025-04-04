@@ -71,7 +71,7 @@ const initialState = {
             debt: '500',
             createdAt: '03.18.2025',
             status: 'In Progress',
-            dates: '04.18.2025',
+            date: '04.18.2025',
         },
         {
             id: '2',
@@ -82,7 +82,7 @@ const initialState = {
             debt: '400',
             createdAt: '03.18.2025',
             status: 'To do',
-            dates: '04.18.2025',
+            date: '04.18.2025',
         }
     ],
     // jobs: [],

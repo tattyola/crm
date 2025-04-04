@@ -11,6 +11,7 @@ const Orders = () => {
     const handleDelete = (id) => {
         dispatch({ type: 'DELETE_ORDER', payload: id });
     }
+
     return (
         <div>
             <h2>Orders</h2>
@@ -26,7 +27,7 @@ const Orders = () => {
                     <th>Debt</th>
                     <th>Created at</th>
                     <th>Status</th>
-                    <th>Dates</th>
+                    <th>Date</th>
 
                 </tr>
                 </thead>

@@ -140,13 +140,13 @@ const CreateNewOrder = () => {
 
                     <InputGroup className="mb-3">
                         <InputGroupText id="inputGroup-sizing-default">
-                            Dates
+                            Date
                         </InputGroupText>
                         <Form.Control
-                            aria-label="Dates"
+                            aria-label="Date"
                             aria-describedby="inputGroup-sizing-default"
-                            onChange={(e) => setNewOrder({...newOrder, dates: e.target.value})}
-                            value={newOrder.dates}
+                            onChange={(e) => setNewOrder({...newOrder, date: e.target.value})}
+                            value={newOrder.date}
                         />
                     </InputGroup>
                 </Modal.Body>
